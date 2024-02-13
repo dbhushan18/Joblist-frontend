@@ -70,6 +70,7 @@ function addJob() {
           position: "top-right",
           autoClose: 2000,
         });
+        navigate("/job-details/:state?.id")
       }). catch((err)=>{
         toast.error("Something went wrong!!", {
           position: "top-center",
@@ -84,6 +85,7 @@ function addJob() {
           position: "top-center",
           autoClose: 2000,
         });
+        navigate("/")
       }). catch((err)=>{
         toast.error("Something went wrong!!", {
           position: "top-center",
